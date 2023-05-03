@@ -1,0 +1,22 @@
+.one input {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.two input {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.three input {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.four input {
+ margin-top: 20px;
+}
+
+.all {
+margin-left: 400px;
+}
