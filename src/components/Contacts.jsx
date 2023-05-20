@@ -1,15 +1,25 @@
 import React from 'react'
+import Contactt from './Contactt'
+import {Row, Col} from 'react-bootstrap'
 
-export default function Contacts(props) {
-    return (
-        <div>
-          {props.contacts.map((contact, index) => (
-            <div key={index}>
-              <p>Name: {contact.name}</p>
-              <p>Email: {contact.phonenumber}</p>
-              <p>Gen: {contact.location}</p>
-            </div>
-          ))}
-        </div>
-      );
-}
+const Contacts = ({ contacts, editDeata, deletData }) => {
+  return (
+    <div>
+      <Row>
+        {contacts.map((contact, index) => {
+          return (
+            <Col key={index}>
+              <Contactt
+                contact={contact}
+                editDeata={editDeata}
+                deletData={deletData}
+              />
+            </Col>
+          );
+        })}
+      </Row>
+    </div>
+  );
+};
+
+export default Contacts
